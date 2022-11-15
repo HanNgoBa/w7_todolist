@@ -16,10 +16,8 @@ function App() {
   localStorage.setItem('todo',jsonTodo)
   const [status, setStatus] = useState("all")
   const [filterTodo, setFilterTodo] = useState([])
-  
   useEffect(() => {
     filterHandler()
-    
   },[todo, status])
   const filterHandler = (e) =>{
 

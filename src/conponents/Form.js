@@ -18,8 +18,6 @@ const Form = ({setinputtext,todo,dos, settodo,inputtext,setStatus}) =>{
       setinputtext(e.target.value)
     }
     const submittodoHandler = (e) => {
-      //e.prevenDefault()
-      //console.log(e)
       settodo(prev => {
         const newtodo = [
           ...todo,{
@@ -38,7 +36,6 @@ const Form = ({setinputtext,todo,dos, settodo,inputtext,setStatus}) =>{
       setinputtext("")
     }
     const statusHandler =(e) =>{
-      console.log(e.target.value)
       setStatus(e.target.value)
     }
     return(
