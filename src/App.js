@@ -21,8 +21,8 @@ function App() {
     filterHandler()
     
   },[todo, status])
-  const filterHandler = () =>{
-    
+  const filterHandler = (e) =>{
+
     switch(status){
       case "completed":
         setFilterTodo(todo.filter(dos => dos.completed===true))
