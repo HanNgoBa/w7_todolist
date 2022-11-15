@@ -2,7 +2,7 @@ import React from "react";
 import Todo from "./Todo";
 
 const Todolist = ({todo,settodo, filterTodo}) =>{
-  console.log(filterTodo.length)
+  //console.log(filterTodo.length)
     return(
     <div className="todo-container"> 
       <ul className="todo-list">
